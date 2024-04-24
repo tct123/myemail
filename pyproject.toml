@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "myemail"
-version = "0.5.0"
+version = "0.6.0"
 description = "A simple package to send emails with python"
 authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
 readme = "README.md"

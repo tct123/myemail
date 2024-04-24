@@ -4,7 +4,7 @@ import email
 
 
 def send(
-    msg_content, from_email, to_email, subject, sslport, password, attachment_path=""
+    msg_content, from_email, to_email, subject, sslport, password, smtpserver, attachment_path=""
 ):
     msg_content = msg_content
     message = EmailMessage()
@@ -54,4 +54,5 @@ if __name__ == "__main__":
         sslport=sslport,
         password=password,
         attachment_path=attachment_path,
+        smtpserver=smtpserver
     )
