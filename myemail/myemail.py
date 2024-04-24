@@ -1,4 +1,9 @@
-def send(msg_content,from_email, to_email,subject):
+import smtplib
+from email.message import EmailMessage
+import email
+
+
+def send(msg_content, from_email, to_email, subject):
     msg_content = msg_content
     message = EmailMessage()
     message["From"] = from_email
