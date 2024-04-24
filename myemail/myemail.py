@@ -20,3 +20,7 @@ def send(msg_content, from_email, to_email, subject):
         print(f"Fehler beim Senden der E-Mail: {e}")
     finally:
         server.quit()
+if __name__ == "__main__":
+    import os, dotenv as dv
+    dv.load_dotenv()
+    send(msg_content="test",from_email=)
