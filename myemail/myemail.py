@@ -53,5 +53,5 @@ if __name__ == "__main__":
         subject="test",
         sslport=sslport,
         password=password,
-        attachment_path=attachment_path
+        attachment_path=attachment_path,
     )
