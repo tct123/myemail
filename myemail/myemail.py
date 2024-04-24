@@ -4,7 +4,14 @@ import email
 
 
 def send(
-    msg_content, from_email, to_email, subject, sslport, password, smtpserver, attachment_path=""
+    msg_content,
+    from_email,
+    to_email,
+    subject,
+    sslport,
+    password,
+    smtpserver,
+    attachment_path="",
 ):
     msg_content = msg_content
     message = EmailMessage()
@@ -34,25 +41,3 @@ def send(
         print(f"Error while sending e-mail: {e}")
     finally:
         server.quit()
-
-
-if __name__ == "__main__":
-    import os, dotenv as dv
-
-    dv.load_dotenv()
-    sslport = os.getenv("SSLPORT")  # For SSL
-    password = os.getenv("PASSWORD")
-    smtpserver = os.getenv("SMTPSERVER")
-    emailvar = os.getenv("EMAIL")
-    attachment_path = f"{os.getenv('HOME')}/testfile123.txt"
-    print(attachment_path)
-    send(
-        msg_content="test",
-        from_email=emailvar,
-        to_email=emailvar,
-        subject="test",
-        sslport=sslport,
-        password=password,
-        attachment_path=attachment_path,
-        smtpserver=smtpserver
-    )
