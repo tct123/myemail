@@ -6,6 +6,11 @@ authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
 readme = "README.md"
 repository = "https://github.com/tct123/myemail"
 
+exclude = [
+    ".env"
+]
+
+
 [tool.poetry.dependencies]
 python = "^3.11"
 
