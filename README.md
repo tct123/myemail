@@ -1,7 +1,7 @@
 # MyEmail
 A simple library to send emails with python
 ## Example
-```
+```python
 from myemail.myemail import send
 
 sslport = os.getenv("SSLPORT")  # For SSL
