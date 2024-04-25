@@ -3,6 +3,7 @@ A simple library to send emails with python
 ## Example
 ```python
 from myemail.myemail import send
+import os
 
 sslport = os.getenv("SSLPORT")  # For SSL
 password = os.getenv("PASSWORD")
